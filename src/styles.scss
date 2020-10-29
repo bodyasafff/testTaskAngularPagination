@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import 'variables';
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+.user-card{
+    margin: 20px;
+    width: 400px;
+    height: 500px;
+    border: solid 1px gray;
+    background-color: $user-card-bg;
+    border-radius: $user-card-br;
+}
+
+.user-card-body{
+    margin-top: 20px;
+}
+
+.user-card-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.user-body-row{
+    width: 80%;
+    margin-left: 10%;
+    display: inline-block;
+    border-bottom:1px gray solid;
+}
+
+.user-body-row-title{
+    color:gray;
+    font-size: $small-font-size;
+    float: left;
+}
+
+.user-body-row-data{
+    font-size: $base-sont-size;
+    float: right;
+}
+
+.pagination-buttons-group{
+    text-align: center;
+}
+
+.pagination-button{
+    padding: 20px 25px;
+    margin: 10px;
+    border: solid 1px gray;
+    border-radius: 10px;
+}
+
+.pagination-button:hover{
+    background-color: powderblue;
+    transition: 0.3s;
+}

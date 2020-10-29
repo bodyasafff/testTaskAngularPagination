@@ -1,0 +1,49 @@
+
+
+
+<div class="container">
+    <div class="row">
+
+        <div *ngFor="let user of (this.users)" class="col-md-4 col-sm-6 col-12">
+
+            <div class="card" style="margin: 20px;">
+                <img [src]="user.avatar" class="user-card-img">
+                <div class="card-body">
+                    <div class="user-body-row">
+                        <p class="user-body-row-title">ID</p>
+                        <p class="user-body-row-data">{{user.id}}</p>
+                    </div>
+
+                    <div class="user-body-row">
+                        <p class="user-body-row-title">EMAIL</p>
+                        <p class="user-body-row-data">{{user.email}}</p>
+                    </div>
+
+                    <div class="user-body-row">
+                        <p class="user-body-row-title">FIRST_NAME</p>
+                        <p class="user-body-row-data">{{user.first_name}}</p>
+                    </div>
+                    
+                    <div class="user-body-row">
+                        <p class="user-body-row-title">LAST_NAME</p>
+                        <p class="user-body-row-data">{{user.last_name}}</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<div class="pagination-buttons-group">
+        <button *ngFor="let btn of this.buttons"
+        [routerLink]="['/numpage',btn]"
+        (click)="changePage(btn)"
+        class="pagination-button"
+        >{{btn}}</button>
+</div>
+

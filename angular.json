@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "testTaskAngularPaginationSCSS"
+    }
+  },
+  "defaultProject": "testTaskAngularPaginationSCSS",
+  "cli": {
+    "analytics": "b534564c-a5bc-4801-b882-41ecc693361e"
+  }
 }
